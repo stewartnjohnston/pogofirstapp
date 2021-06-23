@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils'
 
 const App = {
   template: `
-  <div>Hellox</div>
+  <div>Hello</div>
   `
 }
 
