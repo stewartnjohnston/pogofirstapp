@@ -1,3 +1,19 @@
+import { mount } from '@vue/test-utils'
+
+const App = {
+  template: `
+  <div>Hellox</div>
+  `
+}
+
+test('App', () => {
+  const wrapper = mount(App)
+  console.log(wrapper.html())
+  expect(wrapper.html()).toBe('<div>Hello</div>')
+}) 
+
+
+/*
 import { shallowMount } from '@vue/test-utils'
 import HelloWorld from '@/components/HelloWorld.vue'
 
@@ -9,4 +25,4 @@ describe('HelloWorld.vue', () => {
     })
     expect(wrapper.text()).toMatch(msg)
   })
-})
+})*/
